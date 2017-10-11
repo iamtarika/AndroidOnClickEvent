@@ -1,6 +1,7 @@
 package com.example.navadroid.androidonclickevent;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -41,6 +42,24 @@ public class Option2Activity extends AppCompatActivity {
                 hideKeyboardInput(v);
             }
         });
+
+        findViewById(R.id.button5).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),Option1Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.button6).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),Option3Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        /// add btn ได้เด้อ
     }
 
     // To greet the user

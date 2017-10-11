@@ -1,6 +1,7 @@
 package com.example.navadroid.androidonclickevent;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -31,9 +32,18 @@ public class Option3Activity extends AppCompatActivity implements View.OnClickLi
             case R.id.btn_process_3:
                 greet();
                 break;
+            case R.id.button7:
+                Intent intent = new Intent(getApplicationContext(),Option2Activity.class);
+                startActivity(intent);
+                break;
+            case R.id.button8:
+                Intent t = new Intent(getApplicationContext(),Option4Activity.class);
+                startActivity(t);
+                break;
         }
         hideKeyboardInput(v);
     }
+
 
     // To bind views to this activity
     private void bindView(){
