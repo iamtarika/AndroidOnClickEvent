@@ -10,7 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+// Homework & Lab3Intent
 // TODO: XML onClick attribute & View id
+
 public class Option1Activity extends AppCompatActivity {
 
     private EditText etInput;
